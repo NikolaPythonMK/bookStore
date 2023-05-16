@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <style>
+        .category-el{
+            color: #198754
+       }
+       .fav-icon{
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+    <title>Favourites</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 pb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">BookStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="category-el">Category</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Novel</a></li>
+                  <li><a class="dropdown-item" href="#">Nonfiction</a></li>
+                  <li><a class="dropdown-item" href="#">Fiction</a></li>
+                  <li><a class="dropdown-item" href="#">Science Fiction</a></li>
+                  <li><a class="dropdown-item" href="#">Philosophy</a></li>
+                  <li><a class="dropdown-item" href="#">Comedy</a></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                  <li><a class="dropdown-item" href="#">Classics</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex w-50">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./sell.html">Sell</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./favourites.html">Favourites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./profile.html">Profile</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h2 class="text-center">Favourite books</h2>
+
+      <div class="container">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+                <div class="card mb-4">
+                    <!-- <img src="./img2.jpg" class="card-img-top w-100" alt="..."> -->
+                    <img src="./img.png" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="./item.html" class="btn btn-primary details-btn">Details</a>
+                            <img src="./heart.svg" class="fav-icon">
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="col">
+                <div class="card mb-4">
+                    <!-- <img src="./img3.jpg" class="card-img-top w-100" alt="..."> -->
+                    <img src="./img.png" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="./item.html" class="btn btn-primary details-btn">Details</a>
+                            <img src="./heart.svg" class="fav-icon">
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="col">
+                <div class="card mb-4">
+                    <!-- <img src="./img4.jpg" class="card-img-top w-100" alt="..."> -->
+                    <img src="./img.png" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="./item.html" class="btn btn-primary details-btn">Details</a>
+                            <img src="./heart.svg" class="fav-icon">
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="col">
+                <div class="card mb-4">
+                    <!-- <img src="./img5.jpg" class="card-img-top w-100" alt="..."> -->
+                    <img src="./img.png" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="./item.html" class="btn btn-primary details-btn">Details</a>
+                            <img src="./heart.svg" class="fav-icon">
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
